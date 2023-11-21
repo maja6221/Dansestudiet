@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 ---
 
 <div class="background">
-<h1>Danseportrætter</h1>
+<h2>Danseportrætter</h2>
 
 <section class="grid">
     <img class="img1" src="/src/assets/portrat.1.png" alt="potraet1">
@@ -13,17 +13,19 @@ import { Image } from "astro:assets";
     <img class="img5"src="/src/assets/portrat.5.png" alt="potraet5">
     <img class="img6"src="/src/assets/portrat.6.png" alt="potraet6">
 </section>
-
 </div>
 
 
 <style>
 
-    h1{
-        font-size: 80px;
+    h2{
+        font-size: 64px;
         text-align: center;
-        padding-top: 3rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
         color: #FFF3F2;
+        font-family:"dansestudietdisplay1";
+        font-weight: lighter;
     }
 
 .background {
@@ -34,11 +36,11 @@ import { Image } from "astro:assets";
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto;
-    gap: 2rem;
-    margin-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .grid img{
