@@ -5,6 +5,8 @@ import Lab from "../components/Lab.astro";
 import DansePortraetter from "../components/DansePortraetter.astro";
 import Velkommen from "../components/Velkommen.astro";
 import Workshop from "../components/Workshop.astro";
+
+
 ---
 
 <html lang="en">
@@ -13,17 +15,40 @@ import Workshop from "../components/Workshop.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="global.css" />
 		<title>Astro</title>
 	</head>
 	<body>
 		<Hero/>
 		<Velkommen/>
 		<Genre/>
+
+		<div class="grid1">
 		<Workshop/>
 		<Lab/>
+	</div>
+
 		<DansePortraetter/>
 		<img src="../assets/portrat.1.png" alt="">
 		
 
 	</body>
 </html>
+
+<style>
+
+@media (max-width: 600px) {
+	.grid1 {
+		display: grid;
+		overflow: hidden;
+		grid-template-columns: 1fr;
+	}
+}
+	.grid1 {
+		display: grid;
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+	}
+</style>
+
+
