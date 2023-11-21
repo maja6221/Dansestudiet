@@ -13,6 +13,11 @@
   src: url("dansestudietdisplay1-webfont.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: inter-variablefont;
+  src: url("inter-variablefont_slntwght-webfont.woff2") format("woff2");
+}
+
 img {
   width: 100%;
   height: auto;
