@@ -7,6 +7,7 @@ import Velkommen from "../components/Velkommen.astro";
 import Workshop from "../components/Workshop.astro";
 import Button from "../components/Button.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 
 ---
@@ -40,10 +41,11 @@ import Header from "../components/Header.astro";
 		</div>
 
 		<DansePortraetter/>
-		<img src="../assets/portrat.1.png" alt="">
-		
 
 	</body>
+
+	<Footer/>
+
 </html>
 
 <style>
@@ -76,7 +78,10 @@ import Header from "../components/Header.astro";
 
 	body{
 		margin: 0;
+		padding: 0;
+		gap: 0;
 	}
+
 @media (max-width: 600px) {
 	.grid1 {
 		display: grid;
