@@ -1,5 +1,5 @@
 ---
-
+import Button from "../components/Button.astro";
 ---
 
 <section class="grid3">
@@ -25,27 +25,29 @@
     <li>Waacking</li>
     <li>Workshops m.m.</li>
   </ul>
+  <Button/>
 </section>
 
 <style>
   .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0px;
+    padding-left: 130px;
    
     
   text-align: left;
     list-style-type: none;
     background-color: #fff3f2;
     font-family: "dansestudietdisplay1";
-    padding: 40px;
-    font-size: 32px;
+    /* padding: 40px; */
+    font-size: 20px;
   }
 
   .genre-list {
     list-style: none;
     padding: 0;
     margin: 0;
-  
   }
 
   li {
