@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-}
-
-<<<<<<< HEAD
-=======
 @font-face {
   font-family: dansestudietdisplay1;
   src: url("dansestudietdisplay1-webfont.woff2") format("woff2");
@@ -20,4 +14,3 @@ img {
   height: auto;
   display: block;
 }
->>>>>>> 3103284ca2528bbd699b6184d994b4ab932f29ef
