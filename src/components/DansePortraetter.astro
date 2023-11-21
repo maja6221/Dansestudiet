@@ -5,25 +5,53 @@ import { Image } from "astro:assets";
 <div class="background">
 <h1>Danseportrætter</h1>
 
-<div>
-
-    <img src="/src/assets/portrat.1.png" alt="potraet1">
-    <img src="/src/assets/portrat.2.png" alt="potraet2">
-    <img src="/src/assets/portrat.3.png" alt="potraet3">
-    <img src="/src/assets/portrat.4.png" alt="potraet4">
-    <img src="/src/assets/portrat.5.png" alt="potraet5">
-    <img src="/src/assets/portrat.6.png" alt="potraet6">
-
-</div>
+<section class="grid">
+    <img class="img1" src="/src/assets/portrat.1.png" alt="potraet1">
+    <img class="img2"src="/src/assets/portrat.2.png" alt="potraet2">
+    <img class="img3"src="/src/assets/portrat.3.png" alt="potraet3">
+    <img class="img4"src="/src/assets/portrat.4.png" alt="potraet4">
+    <img class="img5"src="/src/assets/portrat.5.png" alt="potraet5">
+    <img class="img6"src="/src/assets/portrat.6.png" alt="potraet6">
+</section>
 
 </div>
 
 
 <style>
 
+    h1{
+        font-size: 80px;
+        text-align: center;
+        padding-top: 3rem;
+        color: #FFF3F2;
+    }
+
 .background {
-    background-color: #196472;
+    background-color: #0C3C52;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    gap: 2rem;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.grid img{
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 820px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  }
 
 </style>
